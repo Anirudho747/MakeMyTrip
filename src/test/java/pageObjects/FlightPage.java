@@ -32,7 +32,7 @@ public class FlightPage {
 	public void displayMinimumPrice()
 	{
 		String mp = driver.findElement(By.xpath("//span[text()='ONWARD JOURNEY']//following::p[@class='font14 append_bottom4 lineHeight18'][2]//following::p[@class='font10'][1]")).getText();
-		System.out.println("Minimum price for Flights with 1 Stop for 30 days from today is Rs"+mp.substring(mp.length()-5));
+		System.out.println("Minimum price for Flights with 1 Stop for 30 days from today is Rs "+mp.substring(mp.length()-5));
 	}
 
 }
